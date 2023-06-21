@@ -1,0 +1,156 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Oswald&display=swap');
+
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bungee Spice', cursive;
+/* font-family: 'Oswald', sans-serif; */
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(18, 131, 202);
+
+}
+.panel{
+    border-radius: 10px;
+    padding: 15px 10px;
+    width: 100%;
+    /* min-height: 800px; */
+    max-width: 860px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+.pricing-plan{
+    border-bottom: 1px solid rgb(227, 224, 224);
+
+}
+.pricing-plan:last-child{
+    border-bottom: none;
+    
+}
+.pricing-img{
+    margin-bottom: 25px;
+    width: 200px;
+    max-width: 100%;
+}
+.pricing-header{
+    color: #888;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.pricing-features{
+    margin: 50px 0 25px;
+    color: rgb(52, 82, 236);
+}
+.pricing-features-items{
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 1px solid  rgb(18, 131, 202);
+}
+.pricing-features-items:last-child{
+    border-bottom: 1px solid  rgb(18, 131, 202);
+
+}
+pricing-price{
+    display: block;
+    font-weight: 700;
+    font-size: 30px;
+    color: rgb(50, 69, 212);
+}
+.pricing-button{
+    border-radius: 10px;
+    padding: 15px 0;
+    color: rgb(19, 125, 245);
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid rgb(38, 38, 186);
+    margin: 25px 0;
+    transition: backgroud-color 200ms ease-in-out;
+}
+.pricing-button:hover, .pricing-button:focus{
+    background-color: rgb(25, 90, 164);
+    cursor: pointer;
+}
+.pricing-button .is-featured{
+    background-color: rgb(21, 152, 240);
+    color: white;
+}
+.pricing-button .is-featured:hover{
+    background-color: rgb(16, 121, 181);
+}
+
+@media (min-width: 900px){
+    .panel {
+      flex-direction: row;
+    }
+    .pricing-plan {
+      border-bottom: none;
+      border-right: 1px solid #e1f1ff;
+      padding: 25px 50px;
+    }
+    .pricing-plan:last-child {
+      border-right: none;
+    }
+  }
