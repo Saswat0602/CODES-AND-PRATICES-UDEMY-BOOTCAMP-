@@ -1,17 +1,25 @@
-import React, { useState } from "react";
-
-const Counter = () => {
-  const [num, setNum] = useState(0);
-  function changeNum() {
-    setNum(num + 1);
-  }
-
+import { useState } from "react";
+export default function Counter() {
+  console.log("RENDERED!!!");
+  const [count, setCount] = useState(0);
+  const addOne = () => {
+    setCount(count + 1);
+  };
+  const setToTen = () => {
+    setCount(10);
+  };
+  const addThree = () => {
+    setCount((currentCount) => currentCount + 1);
+    console.log(count);
+    setCount((currentCount) => currentCount + 1);
+    setCount((currentCount) => currentCount + 1);
+  };
   return (
     <div>
-      <p>the count is {num}</p>
-      <button onClick={changeNum}>click</button>
+      <p>Count: {count}</p>
+      <button onClick={addOne}>+1</button>
+      <button onClick={addThree}>+3</button>
+      <button onClick={setToTen}>Set To 10</button>
     </div>
   );
-};
-
-export default Counter;
+}
