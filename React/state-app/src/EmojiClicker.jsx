@@ -18,6 +18,13 @@ const deleteEmoji = (id) => {
     return emg.filter((e) => e.id !== id);
   });
 };
+const makeEverythingAHeart = () => {
+  setEmojis((emg) => {
+    return emg.map((e) => {
+      return { ...e, emoji: "❤️" };
+    });
+  });
+};
 
   return (
     <div>
@@ -27,6 +34,7 @@ const deleteEmoji = (id) => {
         </span>
       ))}
       <button onClick={addEmoji}>Add Emoji</button>
+      <button onClick={makeEverythingAHeart}> hearts</button>
     </div>
   );
 };
