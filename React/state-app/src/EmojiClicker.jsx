@@ -19,7 +19,7 @@ const deleteEmoji = (id) => {
   });
 };
 const makeEverythingAHeart = () => {
-  setEmojis((emg) => {
+  sertEmojis((emg) => {
     return emg.map((e) => {
       return { ...e, emoji: "❤️" };
     });
