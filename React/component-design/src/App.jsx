@@ -12,7 +12,7 @@ function allSameValue(dice) {
 function App() {
   return (
     <>
-      {/* <BoxGrid /> */}
+      <BoxGrid />
       <LuckyN winCheck={lessThan4} title="Roll less than 4" />
       <LuckyN
         winCheck={allSameValue}
