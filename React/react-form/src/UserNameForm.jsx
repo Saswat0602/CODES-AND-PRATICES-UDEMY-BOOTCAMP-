@@ -9,11 +9,12 @@ const UserNameForm = () => {
 
   return (
     <div>
+      <label htmlFor="userName">enter ur username</label>
       <input
         type="text"
         value={userName}
         placeholder="username"
-        id=""
+        id="userName"
         onChange={updateUserName}
       />
 
