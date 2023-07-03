@@ -11,7 +11,7 @@ function App() {
     <>
       {/* <UserNameForm /> */}
       {/* <Signup2 /> */}
-      <ShopingListFom />
+      {/* <ShopingListFom /> */}
       <ShpoingList />
     </>
   );
