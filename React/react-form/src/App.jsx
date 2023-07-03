@@ -5,6 +5,7 @@ import Signup2 from "./SignUp2";
 import ShopingListFom from "./ShopingListFom";
 import ShpoingList from "./ShpoingList";
 import "./App.css";
+import FormDemo from "./FormDemo";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       {/* <UserNameForm /> */}
       {/* <Signup2 /> */}
       {/* <ShopingListFom /> */}
-      <ShpoingList />
+      {/* <ShpoingList /> */}
+      <FormDemo />
     </>
   );
 }
