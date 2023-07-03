@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import ShopingListFom from "./ShopingListFom";
+import { v4 as uuid } from "uuid";
+
 
 const ShpoingList = () => {
   const [items, setItems] = useState([
-    { id: 1, product: "banana", qty: 8 },
-    { id: 2, product: "apple", qty: 8 },
+    { id: uuid(), product: "banana", qty: 8 },
+    { id: uuid(), product: "apple", qty: 8 },
   ]);
     const addItem = (item) => {
       setItems((currItems) => {

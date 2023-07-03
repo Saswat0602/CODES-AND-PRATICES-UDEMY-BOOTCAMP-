@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 const ShopingListFom = () => {
   const[formData, setFormdata] = useState({ product: "", qyantity: 0 });
   const handleChange = (e) => {
