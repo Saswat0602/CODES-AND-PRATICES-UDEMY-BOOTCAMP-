@@ -1,15 +1,16 @@
-import { useState } from 'react'
-import UserNameForm from './UserNameForm'
+import { useState } from "react";
+import UserNameForm from "./UserNameForm";
+import SignUpForm from "./SignUpForm";
 
-import './App.css'
+import "./App.css";
 
 function App() {
-
   return (
     <>
-     <UserNameForm/>
+      <UserNameForm />
+      <SignUpForm />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
