@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Counter from "./Counter";
 import "./App.css";
+import QuoteFetcher from "./QuoteFetcher";
 
 function App() {
 
@@ -8,7 +9,8 @@ function App() {
 
   return (
     <>
-      <Counter />
+      {/* <Counter /> */}
+      <QuoteFetcher />
       <h1>hello</h1>
     </>
   );
