@@ -16,6 +16,7 @@ export default function TodoForm({ addTodo }) {
     addTodo(text);
     setText("");
   };
+  
   return (
     <ListItem>
       <form onSubmit={handleSubmit}>
