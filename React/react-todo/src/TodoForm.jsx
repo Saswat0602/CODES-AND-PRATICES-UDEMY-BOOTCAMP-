@@ -13,10 +13,12 @@ export default function TodoForm({ addTodo }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (text.trim() === "") {
+      return;
+    }
     addTodo(text);
     setText("");
   };
-  
   return (
     <ListItem>
       <form onSubmit={handleSubmit}>

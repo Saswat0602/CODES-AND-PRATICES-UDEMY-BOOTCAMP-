@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import CssBaseline from "@mui/material/CssBaseline";
-import Todo from "./Todo";
 import Navbar from './Navbar';
+import TodoList from './TodoList';
 
 function App() {
 
@@ -10,7 +10,7 @@ function App() {
     <>
       <CssBaseline />
       <Navbar />
-      <Todo />
+      <TodoList />
     </>
   );
 }
