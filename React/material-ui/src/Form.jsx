@@ -17,7 +17,7 @@ export default function Form() {
     <Box
       sx={{
         border: "1px solid purple",
-        p: 6,
+        p: 5,
         width: 300,
         height: 300,
         margin: "0 auto",
