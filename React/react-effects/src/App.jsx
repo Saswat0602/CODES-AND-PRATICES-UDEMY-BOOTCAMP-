@@ -3,6 +3,7 @@ import Counter from "./Counter";
 import "./App.css";
 import QuoteFetcher from "./QuoteFetcher";
 import QuoteFetcherLoader from "./QuoteFetcherLoader";
+import ProfileViewerWithSearch from "./ProfileViewerWithSearch";
 
 function App() {
 
@@ -12,7 +13,9 @@ function App() {
     <>
       {/* <Counter /> */}
       {/* <QuoteFetcher /> */}
-      <QuoteFetcherLoader />
+      {/* <QuoteFetcherLoader /> */}
+      <ProfileViewerWithSearch />
+
       <h1>hello</h1>
     </>
   );
