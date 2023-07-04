@@ -5,11 +5,13 @@ import { IconButton } from "@mui/material";
 
 import AlarmIcon from "@mui/icons-material/Alarm";
 import RatingDemo from "./RatingDemo";
+import Form from "./Form";
 
 function App() {
   return (
     <>
-      <RatingDemo />
+      {/* <RatingDemo /> */}
+      <Form />
     </>
   );
 }
