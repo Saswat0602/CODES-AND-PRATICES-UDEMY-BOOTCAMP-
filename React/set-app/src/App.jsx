@@ -29,10 +29,10 @@ function App() {
 
   return (
     <>
-      <Counter />
+      {/* <Counter /> */}
       {/* <Toggler />
       <TogglerCounter /> */}
-      {/* <ColorBoxGrid colors={colors} /> */}
+      <ColorBoxGrid colors={colors} />
 
 
 

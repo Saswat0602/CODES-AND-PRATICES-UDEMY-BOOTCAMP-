@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express()
 const User = require("./models/user");
-const bcrypt = require("bcrypt");
 const session = require("express-session");
 const mongoose = require("mongoose");
 
@@ -19,7 +18,7 @@ mongoose
     console.log("OH NO MONGO CONNECTION ERROR!!!!");
     console.log(err);
   });
-
+ 
 
 app.set("view engine", "ejs");
 app.set("views", "views");
@@ -84,3 +83,4 @@ app.get("/topsecret", requireLogin, (req, res) => {
 app.listen(3000, () => {
   console.log("SERVING YOUR APP! on 3000");
 });
+ 
